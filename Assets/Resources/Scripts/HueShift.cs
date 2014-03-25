@@ -20,9 +20,11 @@ public class HueShift : MonoBehaviour {
 		else {
 			particleSystem.Stop();
 		}
-		baseParticleWhiteness = 0.01f * rigidbody2D.velocity.magnitude;
+		baseParticleWhiteness = 0.008f * rigidbody2D.velocity.magnitude;
 		light.color = new Color (baseHaloWhiteness + (Mathf.Sin (myHueCounter) + 1f) / 2f, baseHaloWhiteness + (Mathf.Sin ((2f/3f) * Mathf.PI + myHueCounter) + 1f) / 2f, baseHaloWhiteness + (Mathf.Sin ((4f/3f) * Mathf.PI +myHueCounter) + 1f) / 2f, 1f);
-		particleSystem.startColor = new Color (baseParticleWhiteness + (Mathf.Sin (myHueCounter) + 1f) / 2f, baseParticleWhiteness + (Mathf.Sin ((2f/3f) * Mathf.PI + myHueCounter) + 1f) / 2f, baseParticleWhiteness + (Mathf.Sin ((4f/3f) * Mathf.PI +myHueCounter) + 1f) / 2f, 1f);
-		myHueCounter += myHueShiftSpeed * rigidbody2D.velocity.magnitude;
+		if (rigidbody2D.velocity.magnitude > 0.001f) {
+			particleSystem.startColor = new Color (baseParticleWhiteness + (Mathf.Sin (myHueCounter) + 1f) / 2f, baseParticleWhiteness + (Mathf.Sin ((2f/3f) * Mathf.PI + myHueCounter) + 1f) / 2f, baseParticleWhiteness + (Mathf.Sin ((4f/3f) * Mathf.PI +myHueCounter) + 1f) / 2f, 1f);
+			myHueCounter += myHueShiftSpeed * rigidbody2D.velocity.magnitude;
+		}
 	}
 }

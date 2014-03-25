@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\Game.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\HueShift.cs">
     <Files>
-      <File FileName="Assets\Resources\Scripts\ChaseDotGame.cs" Line="23" Column="1" />
-      <File FileName="Assets\Resources\Scripts\Game.cs" Line="14" Column="14" />
+      <File FileName="Assets\Resources\Scripts\Game.cs" Line="50" Column="30" />
+      <File FileName="Assets\Resources\Scripts\ChaseDotGame.cs" Line="85" Column="45" />
+      <File FileName="Assets\Resources\Scripts\HueShift.cs" Line="25" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
